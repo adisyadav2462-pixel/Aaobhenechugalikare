@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mami Ranjana ❤️</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#120817;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Background */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-2;
+
+    background:
+    radial-gradient(circle at 20% 20%,#7b285e,transparent 30%),
+    radial-gradient(circle at 80% 80%,#4c2165,transparent 30%),
+    linear-gradient(135deg,#120817,#210b27,#100611);
+}
+
+/* Chamakne wale taare */
+
+.star{
+    position:fixed;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 10px white;
+    animation:chamak 2s infinite alternate;
+}
+
+@keyframes chamak{
+    from{
+        opacity:.2;
+        transform:scale(.5);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1.5);
+    }
+}
+
+/* Pehla Page */
+
+.top{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.box{
+    width:95%;
+    max-width:700px;
+    padding:45px 25px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.2);
+
+    border-radius:35px;
+
+    backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 0 50px rgba(255,80,170,.2),
+    inset 0 0 30px rgba(255,255,255,.03);
+
+    animation:shuru 1.5s ease;
+}
+
+@keyframes shuru{
+
+    from{
+        opacity:0;
+        transform:scale(.7) translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1) translateY(0);
+    }
+
+}
+
+.cake{
+    font-size:80px;
+    animation:uchal 2s infinite;
+}
+
+@keyframes uchal{
+
+    50%{
+        transform:translateY(-12px);
+    }
+
+}
+
+.chota{
+    color:#ffb6d5;
+    font-size:13px;
+    letter-spacing:3px;
+    margin-top:10px;
+}
+
+h1{
+    margin-top:15px;
+    font-size:55px;
+
+    background:linear-gradient(
+        90deg,
+        white,
+        #ff9dcc,
+        white,
+        #ff70b4
+    );
+
+    background-size:250%;
+
+    -webkit-background-clip:text;
+    color:transparent;
+
+    animation:rang 4s linear infinite;
+}
+
+@keyframes rang{
+
+    to{
+        background-position:250%;
+    }
+
+}
+
+.mami{
+    font-size:30px;
+    color:#ffd1e4;
+    margin-top:12px;
+}
+
+.line{
+    width:110px;
+    height:2px;
+    margin:22px auto;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        #ff8fbd,
+        transparent
+    );
+}
+
+.likhawat{
+    font-size:17px;
+    line-height:2;
+    color:#f0e1eb;
+}
+
+/* Button */
+
+button{
+    margin-top:25px;
+
+    padding:15px 28px;
+
+    border:none;
+    border-radius:50px;
+
+    background:linear-gradient(
+        135deg,
+        #ffd0e3,
+        #ff72b3
+    );
+
+    color:#321021;
+
+    font-size:16px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    box-shadow:0 0 25px rgba(255,90,160,.4);
+
+    transition:.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+}
+
+/* Sections */
+
+section{
+    padding:80px 6%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.title small{
+    color:#ff9fc9;
+    letter-spacing:3px;
+}
+
+.title h2{
+    font-size:42px;
+    margin-top:8px;
+}
+
+.title p{
+    color:#cbb9c7;
+    margin-top:8px;
+}
+
+/* Photos */
+
+.photos{
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+}
+
+.photo{
+    position:relative;
+    overflow:hidden;
+
+    border-radius:25px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 15px 50px rgba(0,0,0,.3);
+}
+
+.photo.badi{
+    grid-row:span 2;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+
+    min-height:300px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.7s;
+}
+
+.photo.badi img{
+    min-height:620px;
+}
+
+.photo:hover img{
+    transform:scale(1.06);
+}
+
+.photo-text{
+    position:absolute;
+
+    left:15px;
+    right:15px;
+    bottom:15px;
+
+    padding:13px;
+
+    border-radius:15px;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(10px);
+
+    text-align:center;
+
+    font-size:14px;
+}
+
+/* Mami ke liye */
+
+.patra{
+    max-width:800px;
+
+    margin:auto;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.07);
+
+    border:1px solid rgba(255,255,255,.13);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.25);
+}
+
+.patra .dil{
+    font-size:40px;
+
+    animation:dil 1.3s infinite;
+}
+
+@keyframes dil{
+
+    50%{
+        transform:scale(1.2);
+    }
+
+}
+
+.patra p{
+    margin-top:20px;
+
+    color:#eadce7;
+
+    line-height:2;
+
+    font-size:17px;
+}
+
+.pink{
+    color:#ffadd1;
+    font-weight:bold;
+}
+
+/* Chugali */
+
+.chugali{
+    max-width:800px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:40px 25px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.chugali .emoji{
+    font-size:60px;
+}
+
+.chugali h2{
+    margin:10px;
+    font-size:35px;
+}
+
+.chugali p{
+    color:#d5c4d2;
+    line-height:1.8;
+}
+
+#raaz{
+    display:none;
+
+    margin-top:25px;
+
+    color:#ffd2e5;
+
+    line-height:2;
+
+    animation:khul 1s ease;
+}
+
+@keyframes khul{
+
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+/* Footer */
+
+footer{
+    text-align:center;
+
+    padding:50px 20px 70px;
+
+    color:#a99ba8;
+
+    font-size:13px;
+}
+
+footer b{
+    color:#ffaccf;
+}
+
+/* Udte hue dil */
+
+.udta{
+    position:fixed;
+
+    bottom:-50px;
+
+    font-size:24px;
+
+    animation:upar 8s linear infinite;
+
+    z-index:2;
+
+    pointer-events:none;
+}
+
+@keyframes upar{
+
+    0%{
+        transform:translateY(0) rotate(0);
+        opacity:0;
+    }
+
+    15%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+        opacity:0;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:700px){
+
+    h1{
+        font-size:42px;
+    }
+
+    .mami{
+        font-size:25px;
+    }
+
+    .photos{
+        grid-template-columns:1fr;
+    }
+
+    .photo.badi{
+        grid-row:auto;
+    }
+
+    .photo.badi img{
+        min-height:500px;
+    }
+
+    .photo img{
+        min-height:350px;
+    }
+
+    section{
+        padding:65px 5%;
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- Chamakne wale taare -->
+
+<div class="star" style="top:10%;left:12%"></div>
+<div class="star" style="top:20%;left:80%"></div>
+<div class="star" style="top:35%;left:90%"></div>
+<div class="star" style="top:70%;left:8%"></div>
+<div class="star" style="top:85%;left:85%"></div>
+<div class="star" style="top:55%;left:20%"></div>
+<div class="star" style="top:15%;left:50%"></div>
+
+
+<!-- Udte hue dil -->
+
+<div class="udta" style="left:8%;animation-delay:1s">💗</div>
+<div class="udta" style="left:22%;animation-delay:3s">💕</div>
+<div class="udta" style="left:75%;animation-delay:0s">💖</div>
+<div class="udta" style="left:90%;animation-delay:4s">💗</div>
+
+
+<!-- Pehla Page -->
+
+<section class="top">
+
+<div class="box">
+
+<div class="cake">🎂</div>
+
+<div class="chota">
+AAPKE LIYE EK CHHOTI SI KHUSHI ❤️
+</div>
+
+<h1>
+Happy Birthday
+</h1>
+
+<div class="mami">
+Meri Pyari Mami Ranjana 🌸
+</div>
+
+<div class="line"></div>
+
+<p class="likhawat">
+
+Aaj ka din bahut khaas hai... ✨
+
+<br>
+
+Kyunki aaj Ranjana Mami ka
+janamdin hai. ❤️
+
+<br><br>
+
+Bhagwan aapko hamesha
+<strong class="pink">
+khush, swasth aur muskurata hua
+</strong>
+rakhe.
+
+<br>
+
+Aapki har ichha poori ho
+aur aapke jeevan mein
+hamesha khushiyan bani rahein. 🌷
+
+</p>
+
+<button onclick="neecheJao()">
+🎁 Aage Dekho
+</button>
+
+</div>
+
+</section>
+
+
+<!-- Yaadein -->
+
+<section id="yaadein">
+
+<div class="title">
+
+<small>AAPKI YAadein</small>
+
+<h2>
+Kuch Khoobsurat Yaadein 📸
+</h2>
+
+<p>
+Ye tasveerein hamesha khaas rahengi ❤️
+</p>
+
+</div>
+
+
+<div class="photos">
+
+<div class="photo badi">
+
+<img src="mami_memory_1.jpg">
+
+<div class="photo-text">
+Ek bahut hi pyari yaad... ❤️
+</div>
+
+</div>
+
+
+<div class="photo">
+
+<img src="mami_memory_2.jpg">
+
+<div class="photo-text">
+Mami ki muskaan 😊
+</div>
+
+</div>
+
+
+<div class="photo">
+
+<img src="mami_memory_3.jpg">
+
+<div class="photo-text">
+Hamari Ranjana Mami 🌸
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Mami ke naam -->
+
+<section>
+
+<div class="title">
+
+<small>DIL SE</small>
+
+<h2>
+Mami Ke Naam ❤️
+</h2>
+
+</div>
+
+
+<div class="patra">
+
+<div class="dil">
+💗
+</div>
+
+<p>
+
+Ranjana Mami,
+
+<br><br>
+
+Aap sirf meri Mami nahi ho,
+aap hamare parivaar ki woh
+<strong class="pink">
+pure up wali ho
+</strong>
+woh jo mama ko body builder bana na chati hai. 🥰
+
+<br><br>
+
+Aap hamesha aise hi
+khush raho,
+hasti raho aur
+apni pyari si muskaan
+hamesha banaye rakho.
+
+<br><br>
+
+Aapko duniya ki saari
+<strong class="pink">
+khushiyan
+</strong>
+mile.
+
+<br><br>
+
+<strong class="pink">
+Janamdin ki bahut bahut badhai Mami! 🎂❤️
+</strong>
+
+</p>
+
+</div>
+
+</section>
+
+
+<!-- Aao Behen Chugali Kare -->
+
+<section>
+
+<div class="title">
+
+<small>AB THODI SI...</small>
+
+<h2>
+Aao Behen Chugali Kare 😂
+</h2>
+
+</div>
+
+
+<div class="chugali">
+
+<div class="emoji">
+🤫☕💅
+</div>
+
+<h2>
+Chalo Mami... 😭😂
+</h2>
+
+<p>
+
+Janamdin hai toh thodi si
+chugali toh banti hai! 🤭
+
+<br>
+
+Lekin aaj sirf achhi achhi
+baatein karenge. 😂❤️
+
+</p>
+
+
+<button onclick="raazKholo()">
+🎁 Ek Raaz Hai
+</button>
+
+
+<div id="raaz">
+
+<strong>
+🤭 Raaz khul gaya!
+</strong>
+
+<br><br>
+
+Mami aaj aap
+<strong class="pink">
+Birthday Queen 👑
+</strong>
+ho!
+
+<br>
+
+Aaj koi kaam nahi...
+sirf cake khao 🎂,
+khush raho 😍
+aur mast photos khichao 📸😂
+
+<br><br>
+
+<strong class="pink">
+Bahut saara pyaar ❤️
+<br>
+— Aditya
+</strong>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+Banaya hai dil se ❤️
+
+<br><br>
+
+<strong>
+Meri Pyari Mami Ranjana ke liye 🌸
+</strong>
+
+<br><br>
+
+Aao Behen Chugali Kare 😂❤️
+
+</footer>
+
+
+<script>
+
+function neecheJao(){
+
+    document.getElementById("yaadein")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
+}
+
+
+function raazKholo(){
+
+    document.getElementById("raaz")
+    .style.display="block";
+
+
+    /* Chhote chhote phool aur dil */
+
+    let cheezein=[
+        "💖",
+        "💕",
+        "✨",
+        "🌸",
+        "🎉",
+        "🎊",
+        "❤️"
+    ];
+
+
+    for(let i=0;i<50;i++){
+
+        let x=document.createElement("div");
+
+        x.innerHTML=
+        cheezein[
+            Math.floor(
+                Math.random()*cheezein.length
+            )
+        ];
+
+        x.style.position="fixed";
+
+        x.style.left="50%";
+        x.style.top="50%";
+
+        x.style.fontSize=
+        (18+Math.random()*15)+"px";
+
+        x.style.zIndex="50";
+
+        document.body.appendChild(x);
+
+
+        let a=x.animate(
+
+        [
+
+            {
+                transform:
+                "translate(-50%,-50%) scale(.4)",
+                opacity:1
+            },
+
+            {
+                transform:
+                `translate(
+                    calc(-50% + ${(Math.random()-.5)*window.innerWidth}px),
+                    calc(-50% + ${(Math.random()-.5)*window.innerHeight}px)
+                )
+                rotate(${Math.random()*720}deg)
+                scale(1.2)`,
+
+                opacity:0
+            }
+
+        ],
+
+        {
+            duration:
+            1800+Math.random()*1500,
+
+            easing:
+            "cubic-bezier(.1,.7,.2,1)"
+        }
+
+        );
+
+
+        a.onfinish=()=>{
+            x.remove();
+        };
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
